@@ -68,11 +68,6 @@
             <version>1.9.2</version>
         </dependency>
         <dependency>
-            <groupId>com.hualala.grpc</groupId>
-            <artifactId>grpc-object-convertor</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
