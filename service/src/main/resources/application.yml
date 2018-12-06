@@ -1,0 +1,38 @@
+spring:
+  profiles.active: local
+---
+spring:
+  profiles: local
+  aop:
+    auto: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/db_shop?autoReconnect=true&autoReconnectForPools=true&failOverReadOnly=false&allowMultiQueries=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    initial-size: 5
+    max-active: 30
+    min-idle: 2
+    validation-query: SELECT 1
+    test-on-borrow: true
+    test-while-idle: true
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+endpoints:
+  enabled: false
+  health:
+     enabled: true
+     time-to-live: 5000
+
+canal:
+   host: 172.16.0.25
+   port: 11112
+   destination: example
+   username:
+   password:

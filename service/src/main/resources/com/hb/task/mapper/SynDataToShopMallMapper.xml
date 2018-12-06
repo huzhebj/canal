@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hb.task.mapper.SynDataToShopMallMapper">
+
+    <insert id="addHouse" parameterType="com.hb.task.model.HouseDetail" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tbl_shop_org_house
+        (
+        houseID
+        ,houseName
+        ,houseCode
+        <if test="alias != null">
+            ,alias
+        </if>
+        <if test="isOpeningBalance != null">
+            ,isOpeningBalance
+        </if>
+        <if test="address != null">
+            ,address
+        </if>
+        <if test="charge != null">
+            ,charge
+        </if>
+        <if test="createBy != null">
+            ,createBy
+        </if>
+        <if test="actionBy != null">
+            ,actionBy
+        </if>
+        <if test="linkTel != null">
+            ,linkTel
+        </if>
+        <if test="note != null">
+            ,note
+        </if>
+        <if test="isActive != null">
+            ,isActive
+        </if>
+        <if test="action != null">
+            ,action
+        </if>
+        <if test="createTime != null">
+            ,createTime
+        </if>
+        <if test="actionTime != null">
+            ,actionTime
+        </if>
+        ,demandID
+        )VALUES(
+        #{houseID}
+        ,#{houseName}
+        ,#{houseCode}
+        <if test="alias != null">
+            ,#{alias}
+        </if>
+        <if test="isOpeningBalance != null">
+            ,#{isOpeningBalance}
+        </if>
+        <if test="address != null">
+            ,#{address}
+        </if>
+        <if test="charge != null">
+            ,#{charge}
+        </if>
+        <if test="createBy != null">
+            ,#{createBy}
+        </if>
+        <if test="actionBy != null">
+            ,#{actionBy}
+        </if>
+        <if test="linkTel != null">
+            ,#{linkTel}
+        </if>
+        <if test="note != null">
+            ,#{note}
+        </if>
+        <if test="isActive != null">
+            ,#{isActive}
+        </if>
+        <if test="action != null">
+            ,#{action}
+        </if>
+        <if test="createTime != null">
+            ,#{createTime}
+        </if>
+        <if test="actionTime != null">
+            ,#{actionTime}
+        </if>
+        ,#{demandID}
+        )
+    </insert>
+
+    <select id="checkHouseIsExist" parameterType="com.hb.task.model.HouseDetail" resultType="java.lang.Integer">
+        SELECT COUNT(1) from tbl_shop_org_house
+        where houseID=#{houseID} and action in(0,1) limit 1;
+    </select>
+
+    <update id="updateHouse" parameterType="com.hb.task.model.HouseDetail">
+        UPDATE tbl_shop_org_house
+        SET houseName=#{houseName}
+        ,houseCode=#{houseCode}
+        <if test="alias != null">
+            ,alias=#{alias}
+        </if>
+        <if test="isOpeningBalance != null">
+            ,isOpeningBalance=#{isOpeningBalance}
+        </if>
+        <if test="address != null">
+            ,address=#{address}
+        </if>
+        <if test="charge != null">
+            ,charge=#{charge}
+        </if>
+        <if test="createBy != null">
+            ,createBy=#{createBy}
+        </if>
+        <if test="actionBy != null">
+            ,actionBy=#{actionBy}
+        </if>
+        <if test="linkTel != null">
+            ,linkTel=#{linkTel}
+        </if>
+        <if test="note != null">
+            ,note=#{note}
+        </if>
+        <if test="isActive != null">
+            ,isActive=#{isActive}
+        </if>
+        <if test="action != null">
+            ,action=#{action}
+        </if>
+        <if test="createTime != null">
+            ,createTime=#{createTime}
+        </if>
+        <if test="actionTime != null">
+            ,actionTime=#{actionTime}
+        </if>
+        ,demandID=#{demandID}
+        where houseID=#{houseID} and action in(0,1)
+    </update>
+
+</mapper>
