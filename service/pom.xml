@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>org-task-service</artifactId>
+    <artifactId>canal-service</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>org-task</description>
