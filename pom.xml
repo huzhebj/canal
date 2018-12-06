@@ -24,18 +24,6 @@
         <buildTimestamp>${maven.build.timestamp}</buildTimestamp>
         <maven.build.timestamp.format>yyyyMMdd.HHmm</maven.build.timestamp.format>
     </properties>
-    <!--<distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://repo.hualala.com/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://repo.hualala.com/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>-->
     <dependencyManagement>
         <dependencies>
             <dependency>
