@@ -49,7 +49,7 @@ public class TestCase {
         houseDetail.setAlias("仓库1206-2");
         houseDetail.setDemandID(1010L);
         houseDetail.setIsOpeningBalance("1");
-        houseDetail.setAddress("北京市西城区凯德大厦");
+        houseDetail.setAddress("北京市西城区凯德大厦34567");
         houseDetail.setCharge("张三");
         houseDetail.setCreateBy("张三");
         houseDetail.setActionBy("王五");
