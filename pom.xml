@@ -96,16 +96,6 @@
 
     <repositories>
         <repository>
-            <id>public</id>
-            <name>Public Repositories</name>
-            <url>http://repo.hualala.com/nexus/content/groups/Public/</url>
-        </repository>
-        <repository>
-            <id>nexus-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://repo.hualala.com/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
             <id>gozap</id>
             <name>gozap构件发布版仓库</name>
             <url>http://repo.gozap.com/repos/content/repositories/gozap/</url>
