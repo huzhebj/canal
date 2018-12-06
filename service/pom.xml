@@ -33,13 +33,19 @@
             <artifactId>ant</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.hualala.rpc</groupId>
-            <artifactId>rpc-core-service</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!--<dependency>
-            <groupId>com.hualala.rpc</groupId>
-            <artifactId>rpc-core</artifactId>
-        </dependency>-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>4.1.4</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
