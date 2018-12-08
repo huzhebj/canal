@@ -103,7 +103,7 @@ public class CanalListener extends AbstractCanalListener {
                         houseDetail.setAlias(value);
                         break;
                     //配送中心ID
-                    case "demandOrgID":
+                    case "demandID":
                         houseDetail.setDemandID(Long.parseLong(value));
                         break;
                     //是否期初 0：否 1：是 默认否
